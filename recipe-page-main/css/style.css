@@ -1,0 +1,162 @@
+:root {
+    /* Colores */
+
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+
+    /* tipografia*/
+
+    --fuente-principal: "Young Serif", serif;
+    --fuente-secundaria: "Outfit", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    font-size: 18px;
+    font-family: var(--fuente-secundaria);
+    font-weight: normal;
+    background-color: var(--Stone-100);
+    color: var(--Stone-600);
+}
+
+h1 {
+    color: var(--Stone-900);
+    font-family: var(--fuente-principal);
+    font-size: 44px;
+    font-weight: normal;
+}
+
+h2 {
+    color: var(--Brown-800);
+    font-family: var(--fuente-principal);
+}
+
+h3 {
+    color: var(--Rose-800);
+    margin-left: 1rem;
+}
+
+ul, ol {
+    line-height: 3rem;
+    padding-left: 2.5rem;
+}
+
+ol {
+    border-bottom: solid .1rem var(--Stone-150);
+    padding-bottom: 2rem;
+}
+
+strong {
+    color: var(--Stone-600);
+}
+
+.definicion-tiempo {
+    color: var(--Stone-600);
+}
+
+.contenedor-principal {
+    width: 80rem;
+    background-color: var(--White);
+    margin: 10rem auto;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.preparacion {
+    width: 100%;
+    background-color: var(--Rose-50);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.preparacion ::marker {
+    color: var(--Rose-800);
+    font-size: 12px;
+}
+
+.preparacion ul {
+    margin-left: 1rem;
+}
+
+.preparacion strong {
+    margin-left: 2rem;
+}
+
+.ingredientes ::marker {
+    color: var(--Brown-800);
+    font-size: 14px;
+}
+
+.marcadores ul {
+    list-style-type: square;
+}
+
+.instrucciones ::marker {
+    color: var(--Brown-800);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.instrucciones p, span {
+    margin-left: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 0;
+}
+
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.elemento {
+    margin-left: 2rem;
+}
+
+.elemento, .cantidad {
+    display: flex;
+    flex-direction: column;
+}
+
+.elemento span, .cantidad span {
+    border-bottom: solid .1rem var(--Stone-150);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.cantidad span {
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+
+.elemento span:last-of-type {
+    border: none;
+}
+
+.cantidad span:last-of-type {
+    border: none;
+}
+
+.attribution {
+text-align: center;
+}
